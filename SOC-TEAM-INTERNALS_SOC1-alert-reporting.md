@@ -26,14 +26,15 @@ Flag:
 - Looking at the new alerts, who is the "sender" of the suspicious, likely phishing email?
   `support@microsoft.com`
 - Open the phishing alert, read its details, and try to understand the activity.
-  Using the Five Ws template, what flag did you receive after writing a good report? **Note**: Assign yourself, move the alert to In Progress, and fill in the Analyst Comment.
+  Using the Five Ws template, what flag did you receive after writing a good report? 
+  Note: Assign yourself, move the alert to In Progress, and fill in the Analyst Comment.
   Report:
-  ```
-  Who - Sent from support@microsoft.com to user Eddie Huffman, IT manager, e.huggman@tryhackme.thm
+```
+Who - Sent from support@microsoft.com to user Eddie Huffman, IT manager, e.huggman@tryhackme.thm
 when - Mar 27th 2025, 19:25 CET
 where - Email. Phishing email was sent but detected post delivery. SPF FAIL DKIM FAIL. File "REPORT.rar" attached. Email instructs user to open attached file.
 why - Sender email looks legit and is sent to IT manager, which could classify it as a real email. Attached file "REPORT.rar". L1 finds it suspicious why microsoft support would need user to download and open a file, specifically .rar files which could contain encrypted/compressed malicious files.
-  ```
+```
 Flag: `THM{nice_FLAG-VALUE_support}`
 
 ### Escalation guide
